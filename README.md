@@ -142,8 +142,10 @@ rm -rf $HOME/.story/story/data
 curl https://server-3.itrocket.net/testnet/story/story_2024-11-02_226713_snap.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.story/story
 ```
 
-# restore priv_validator_state.json
+**restore priv_validator_state.json**
+```
 mv $HOME/.story/story/priv_validator_state.json.backup $HOME/.story/story/data/priv_validator_state.json
+```
 
 # delete geth data and unpack Geth snapshot
 rm -rf $HOME/.story/geth/odyssey/geth/chaindata
