@@ -154,10 +154,12 @@ mkdir -p $HOME/.story/geth/odyssey/geth
 curl https://server-3.itrocket.net/testnet/story/geth_story_2024-11-02_226713_snap.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.story/geth/odyssey/geth
 ```
 
-# enable and start geth, story
+**enable and start geth, story**
+```
 sudo systemctl daemon-reload
 sudo systemctl enable story story-geth
 sudo systemctl restart story-geth && sleep 5 && sudo systemctl restart story
+```
 
 # check logs
 journalctl -u story -u story-geth -f
