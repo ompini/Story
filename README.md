@@ -161,10 +161,13 @@ sudo systemctl enable story story-geth
 sudo systemctl restart story-geth && sleep 5 && sudo systemctl restart story
 ```
 
-# check logs
+**check logs**
+```
 journalctl -u story -u story-geth -f
 Automatic Installation
 source <(curl -s https://itrocket.net/api/testnet/story/story-autoinstall/)
+```
+
 Create validator
 View your validator key
 
