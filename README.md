@@ -168,11 +168,13 @@ Automatic Installation
 source <(curl -s https://itrocket.net/api/testnet/story/story-autoinstall/)
 ```
 
-Create validator
-View your validator key
+**reate validator**
 
+View your validator key
 story validator export
+```
 Export EVM private key
+```
 
 story validator export --export-evm-key
 View EVM private key and make a key backup
